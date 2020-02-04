@@ -19,7 +19,7 @@ Response:
 ```
 
 #### To get course data for a specific major:
-Request: `GET "/$(majorID)"`  
+Request: `GET "/major/<majorID>"`  
 Response:   
 ```
 {
@@ -122,6 +122,6 @@ By convention, the courses will be listed in the following order: GE courses, GE
 
 
 ## Additional endpoints for Demo 2  
-`GET "/$(netid)"` - returns JSON representation of saved schedule (a schedule object) for given netid  
-`POST "/$(netid)"` - req.body contains JSON representation of saved schedule (a schedule object); response is an ok message or error message  
+`GET "/schedule/<netid>"` - returns JSON representation of saved schedule (a schedule object) for given netid  
+`POST "/schedule/<netid>"` - req.body contains JSON representation of saved schedule (a schedule object); response is an ok message or error message  
 `{"error": false, "message": "Schedule saved"}`
