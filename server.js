@@ -37,10 +37,24 @@ const econProgram = {
 				"prereqs" : []
 		}
 		{
-			"code" : "econ110",
-			"name" : "Economic Principles and Problems",
+			"code" : "ahtg100",
+			"name" : "American Heritage",
 			"credits" : 3,
-			"type" : "major-required",
+			"type" : "GE",
+			"offered" :
+				{
+					"fall" : true,
+					"winter" : true,
+					"spring" : false,
+					"summer" : false
+				},
+				"prereqs" : []
+		}
+		{
+			"code" : "wrtg150",
+			"name" : "Writing and Rhetoric",
+			"credits" : 3,
+			"type" : "GE",
 			"offered" :
 				{
 					"fall" : true,
@@ -49,6 +63,20 @@ const econProgram = {
 					"summer" : true
 				},
 				"prereqs" : []
+		}
+		{
+			"code" : "econ380",
+			"name" : "Intermediate Price Theory 1",
+			"credits" : 3,
+			"type" : "major-required",
+			"offered" :
+				{
+					"fall" : true,
+					"winter" : true,
+					"spring" : true,
+					"summer" : false
+				},
+				"prereqs" : ["econ110", "math112"]
 		}
 		{
 			"code" : "econ378",
@@ -61,6 +89,104 @@ const econProgram = {
 					"winter" : true,
 					"spring" : true,
 					"summer" : true
+				},
+				"prereqs" : ["econ110"]
+		}
+		{
+			"code" : "econ382",
+			"name" : "Intermediate Price Theory 2",
+			"credits" : 3,
+			"type" : "major-required",
+			"offered" :
+				{
+					"fall" : true,
+					"winter" : true,
+					"spring" : true,
+					"summer" : false
+				},
+				"prereqs" : ["econ110"]
+		}
+		{
+			"code" : "econ420",
+			"name" : "Economicas of Antitrust Law and Regulation",
+			"credits" : 3,
+			"type" : "major-elective",
+			"offered" :
+				{
+					"fall" : true,
+					"winter" : false,
+					"spring" : false,
+					"summer" : false
+				},
+				"prereqs" : ["econ110"]
+		}
+		{
+			"code" : "econ421",
+			"name" : "Law and Economics",
+			"credits" : 3,
+			"type" : "major-elective",
+			"offered" :
+				{
+					"fall" : false,
+					"winter" : true,
+					"spring" : false,
+					"summer" : false
+				},
+				"prereqs" : ["econ378", "econ380"]
+		}
+		{
+			"code" : "econ431",
+			"name" : "Economic Development",
+			"credits" : 3,
+			"type" : "major-elective",
+			"offered" :
+				{
+					"fall" : true,
+					"winter" : true,
+					"spring" : false,
+					"summer" : false
+				},
+				"prereqs" : ["econ380", "econ388", "poli328"]
+		}
+		{
+			"code" : "math112",
+			"name" : "Calculus 1",
+			"credits" : 4,
+			"type" : "GE-major-required",
+			"offered" :
+				{
+					"fall" : true,
+					"winter" : true,
+					"spring" : true,
+					"summer" : true
+				},
+				"prereqs" : []
+		}
+		{
+			"code" : "econ110",
+			"name" : "Economic Principles and Problems",
+			"credits" : 3,
+			"type" : "GE-major-required",
+			"offered" :
+				{
+					"fall" : true,
+					"winter" : true,
+					"spring" : true,
+					"summer" : true
+				},
+				"prereqs" : []
+		}
+		{
+			"code" : "econ230",
+			"name" : "Economic Development and Growth",
+			"credits" : 3,
+			"type" : "major-elective",
+			"offered" :
+				{
+					"fall" : true,
+					"winter" : true,
+					"spring" : false,
+					"summer" : false
 				},
 				"prereqs" : ["econ110"]
 		}
