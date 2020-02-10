@@ -610,6 +610,227 @@
                [
                 "CS 240"
                ]
+        },
+        {
+            "code": "REL A 275", 
+            "name": "Teachings and Doctrine of the Book of Mormon", 
+            "credits": 2,
+            "type": "GE",
+            "offered":
+               {
+                "fall": true, 
+                "winter": true, 
+                "spring": true, 
+                "summer": true
+               },
+            "prereqs": 
+               [
+                
+               ]
+        },
+        {
+            "code": "REL A 250", 
+            "name": "Jesus Christ and the Everlasting Gospel", 
+            "credits": 2,
+            "type": "GE",
+            "offered":
+               {
+                "fall": true, 
+                "winter": true, 
+                "spring": true, 
+                "summer": true
+               },
+            "prereqs": 
+               [
+                
+               ]
+        },
+        {
+            "code": "REL C 225", 
+            "name": "Foundations of the Restoration", 
+            "credits": 2,
+            "type": "GE",
+            "offered":
+               {
+                "fall": true, 
+                "winter": true, 
+                "spring": true, 
+                "summer": true
+               },
+            "prereqs": 
+               [
+                
+               ]
+        },
+        {
+            "code": "REL C 200", 
+            "name": "The Eternal Family", 
+            "credits": 2,
+            "type": "GE",
+            "offered":
+               {
+                "fall": true, 
+                "winter": true, 
+                "spring": true, 
+                "summer": true
+               },
+            "prereqs": 
+               [
+                
+               ]
+        },
+        {
+            "code": "A HTG 100", 
+            "name": "American Heritage", 
+            "credits": 3,
+            "type": "GE",
+            "offered":
+               {
+                "fall": true, 
+                "winter": true, 
+                "spring": false, 
+                "summer": false
+               },
+            "prereqs": 
+               [
+                
+               ]
+        },
+        {
+            "code": "ANTHR 101", 
+            "name": "Social/Cultural Anthropology", 
+            "credits": 3,
+            "type": "GE",
+            "offered":
+               {
+                "fall": true, 
+                "winter": true, 
+                "spring": true, 
+                "summer": true
+               },
+            "prereqs": 
+               [
+                
+               ]
+        },
+        {
+            "code": "WRTG 150", 
+            "name": "Writing and Rhetoric", 
+            "credits": 3,
+            "type": "GE",
+            "offered":
+               {
+                "fall": true, 
+                "winter": true, 
+                "spring": true, 
+                "summer": true
+               },
+            "prereqs": 
+               [
+                
+               ]
+        },
+        {
+            "code": "ARTHC 201", 
+            "name": "World Civilization to 1500", 
+            "credits": 3,
+            "type": "GE",
+            "offered":
+               {
+                "fall": true, 
+                "winter": true, 
+                "spring": true, 
+                "summer": true
+               },
+            "prereqs": 
+               [
+                
+               ]
+        },
+        {
+            "code": "ARTHC 202", 
+            "name": "World Civilization Since 1500", 
+            "credits": 3,
+            "type": "GE",
+            "offered":
+               {
+                "fall": true, 
+                "winter": true, 
+                "spring": true, 
+                "summer": true
+               },
+            "prereqs": 
+               [
+                
+               ]
+        },
+        {
+            "code": "ART 101", 
+            "name": "Introduction to Art and Drawing", 
+            "credits": 3,
+            "type": "GE",
+            "offered":
+               {
+                "fall": true, 
+                "winter": true, 
+                "spring": true, 
+                "summer": true
+               },
+            "prereqs": 
+               [
+                
+               ]
+        },
+        {
+            "code": "ENGL 202", 
+            "name": "Masterpieces of World Literature 2", 
+            "credits": 3,
+            "type": "GE",
+            "offered":
+               {
+                "fall": true, 
+                "winter": true, 
+                "spring": false, 
+                "summer": false
+               },
+            "prereqs": 
+               [
+                
+               ]
+        },
+        {
+            "code": "BIO 100", 
+            "name": "Principles of Biology", 
+            "credits": 3,
+            "type": "GE",
+            "offered":
+               {
+                "fall": true, 
+                "winter": true, 
+                "spring": true, 
+                "summer": true
+               },
+            "prereqs": 
+               [
+                
+               ]
+        },
+        {
+            "code": "PHY S 100", 
+            "name": "Physical Science", 
+            "credits": 3,
+            "type": "GE",
+            "offered":
+               {
+                "fall": true, 
+                "winter": true, 
+                "spring": true, 
+                "summer": true
+               },
+            "prereqs": 
+               [
+                
+               ]
         }
 
     ]
