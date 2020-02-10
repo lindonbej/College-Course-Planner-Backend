@@ -35,7 +35,7 @@ const econProgram = {
 					"summer" : true
 				},
 				"prereqs" : []
-		}
+		},
 		{
 			"code" : "ahtg100",
 			"name" : "American Heritage",
@@ -49,7 +49,7 @@ const econProgram = {
 					"summer" : false
 				},
 				"prereqs" : []
-		}
+		},
 		{
 			"code" : "wrtg150",
 			"name" : "Writing and Rhetoric",
@@ -63,7 +63,7 @@ const econProgram = {
 					"summer" : true
 				},
 				"prereqs" : []
-		}
+		},
 		{
 			"code" : "econ380",
 			"name" : "Intermediate Price Theory 1",
@@ -77,7 +77,7 @@ const econProgram = {
 					"summer" : false
 				},
 				"prereqs" : ["econ110", "math112"]
-		}
+		},
 		{
 			"code" : "econ378",
 			"name" : "Statistics for Economists",
@@ -91,7 +91,7 @@ const econProgram = {
 					"summer" : true
 				},
 				"prereqs" : ["econ110"]
-		}
+		},
 		{
 			"code" : "econ382",
 			"name" : "Intermediate Price Theory 2",
@@ -105,7 +105,7 @@ const econProgram = {
 					"summer" : false
 				},
 				"prereqs" : ["econ110"]
-		}
+		},
 		{
 			"code" : "econ420",
 			"name" : "Economicas of Antitrust Law and Regulation",
@@ -119,7 +119,7 @@ const econProgram = {
 					"summer" : false
 				},
 				"prereqs" : ["econ110"]
-		}
+		},
 		{
 			"code" : "econ421",
 			"name" : "Law and Economics",
@@ -133,7 +133,7 @@ const econProgram = {
 					"summer" : false
 				},
 				"prereqs" : ["econ378", "econ380"]
-		}
+		},
 		{
 			"code" : "econ431",
 			"name" : "Economic Development",
@@ -147,7 +147,7 @@ const econProgram = {
 					"summer" : false
 				},
 				"prereqs" : ["econ380", "econ388", "poli328"]
-		}
+		},
 		{
 			"code" : "math112",
 			"name" : "Calculus 1",
@@ -161,7 +161,7 @@ const econProgram = {
 					"summer" : true
 				},
 				"prereqs" : []
-		}
+		},
 		{
 			"code" : "econ110",
 			"name" : "Economic Principles and Problems",
@@ -175,7 +175,7 @@ const econProgram = {
 					"summer" : true
 				},
 				"prereqs" : []
-		}
+		},
 		{
 			"code" : "econ230",
 			"name" : "Economic Development and Growth",
