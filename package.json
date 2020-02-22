@@ -1,0 +1,24 @@
+{
+  "name": "course-planner-backend",
+  "version": "1.0.0",
+  "description": "Provides API services for the College Course Planner web app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindonbej/College-Course-Planner-Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lindonbej/College-Course-Planner-Backend/issues"
+  },
+  "homepage": "https://github.com/lindonbej/College-Course-Planner-Backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
