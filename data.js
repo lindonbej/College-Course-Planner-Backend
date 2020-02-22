@@ -1184,7 +1184,7 @@ module.exports = {
            ]
          },
          {
-           "year" : 2021,
+           "year" : 2022,
            "type" : "Winter",
            "courses" :
            [
@@ -1333,7 +1333,225 @@ module.exports = {
                        [
 
                        ]
+                 }
+               ]
+             },
+             {
+               "year" : 2023,
+               "type" : "Winter",
+               "courses" :
+               [
+                 {
+                    "code" : "ECON 382",
+                    "name" : "Intermediate Price Theory 2",
+                    "credits" : 3,
+                    "type" : "major-required",
+                    "offered" :
+                       {
+                          "fall" : true,
+                          "winter" : true,
+                          "spring" : true,
+                          "summer" : false
+                       },
+                       "prereqs" : ["ECON 110"]
                  },
+                 {
+                    "code" : "ECON 388",
+                    "name" : "Introduction to Econometrics",
+                    "credits" : 3,
+                    "type" : "major-required",
+                    "offered" :
+                       {
+                          "fall" : true,
+                          "winter" : true,
+                          "spring" : true,
+                          "summer" : false
+                       },
+                       "prereqs" : ["ECON 378", "ECON 380"]
+                 },
+                 {
+                    "code" : "ECON 420",
+                    "name" : "Economicas of Antitrust Law and Regulation",
+                    "credits" : 3,
+                    "type" : "major-elective",
+                    "offered" :
+                       {
+                          "fall" : true,
+                          "winter" : false,
+                          "spring" : false,
+                          "summer" : false
+                       },
+                       "prereqs" : ["ECON 110"]
+                 },
+                 {
+                    "code" : "MUSIC 101",
+                    "name" : "Introduction to Music",
+                    "credits" : 3
+                    "type" : "GE",
+                    "offered" :
+                       {
+                          "fall" : true,
+                          "winter" : true,
+                          "spring" : true,
+                          "summer" : false
+                       },
+                       "prereqs" :
+                       [
+
+                       ]
+                 },
+                 {
+                    "code" : "IHUM 202",
+                    "name" : "Western Humanities 2: Renaissance to the Present",
+                    "credits" : 3
+                    "type" : "GE",
+                    "offered" :
+                       {
+                          "fall" : true,
+                          "winter" : true,
+                          "spring" : true,
+                          "summer" : false
+                       },
+                       "prereqs" :
+                       [
+
+                       ]
+                 }
+               ]
+             },
+             {
+               "year" : 2023,
+               "type" : "Fall",
+               "courses" :
+               [
+                 {
+                    "code" : "ECON 421",
+                    "name" : "Law and Economics",
+                    "credits" : 3,
+                    "type" : "major-elective",
+                    "offered" :
+                       {
+                          "fall" : false,
+                          "winter" : true,
+                          "spring" : false,
+                          "summer" : false
+                       },
+                       "prereqs" : ["ECON 378", "ECON 380"]
+                 },
+                 {
+                    "code" : "ECON 431",
+                    "name" : "Economic Development",
+                    "credits" : 3,
+                    "type" : "major-elective",
+                    "offered" :
+                       {
+                          "fall" : true,
+                          "winter" : true,
+                          "spring" : false,
+                          "summer" : false
+                       },
+                       "prereqs" : ["ECON 380", "ECON 110388", "POLI 328"]
+                 },
+                 {
+                    "code" : "ECON 420",
+                    "name" : "Economicas of Antitrust Law and Regulation",
+                    "credits" : 3,
+                    "type" : "major-elective",
+                    "offered" :
+                       {
+                          "fall" : true,
+                          "winter" : false,
+                          "spring" : false,
+                          "summer" : false
+                       },
+                       "prereqs" : ["ECON 110"]
+                 },
+                 {
+                    "code" : "PHSCS 101",
+                    "name" : "Basic Physics",
+                    "credits" : 3
+                    "type" : "GE",
+                    "offered" :
+                       {
+                          "fall" : true,
+                          "winter" : true,
+                          "spring" : true,
+                          "summer" : false
+                       },
+                       "prereqs" :
+                       [
+
+                       ]
+                 },
+                 {
+                    "code" : "BIO 100",
+                    "name" : "Principles of Biology",
+                    "credits" : 3
+                    "type" : "GE",
+                    "offered" :
+                       {
+                          "fall" : true,
+                          "winter" : true,
+                          "spring" : true,
+                          "summer" : false
+                       },
+                       "prereqs" :
+                       [
+
+                       ]
+                 },
+                 {
+                     "code": "ANTHR 101",
+                     "name": "Social/Cultural Anthropology",
+                     "credits": 3,
+                     "type": "GE",
+                     "offered":
+                        {
+                         "fall": true,
+                         "winter": true,
+                         "spring": true,
+                         "summer": true
+                        },
+                     "prereqs":
+                        [
+
+                        ]
+                 }
+               ]
+             }
+             {
+               "year" : 2024,
+               "type" : "Winter",
+               "courses" :
+               [
+                 {
+                    "code" : "ECON 450",
+                    "name" : "Financial Economics",
+                    "credits" : 3,
+                    "type" : "major-elective",
+                    "offered" :
+                       {
+                          "fall" : false,
+                          "winter" : true,
+                          "spring" : false,
+                          "summer" : false
+                       },
+                       "prereqs" : ["ECON 382", "ECON 388"]
+                 },
+                 {
+                    "code" : "ECON 478",
+                    "name" : "Game Theory and Economics",
+                    "credits" : 3,
+                    "type" : "major-elective",
+                    "offered" :
+                       {
+                          "fall" : true,
+                          "winter" : true,
+                          "spring" : false,
+                          "summer" : false
+                       },
+                       "prereqs" : ["ECON 378", "ECON 380"]
+                 }
                ]
              }
            ]
