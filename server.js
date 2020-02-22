@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const server = express();
 const port = 4000;
 
@@ -6,13 +7,21 @@ const CS_ID = 1;
 const ECON_ID = 2;
 var data = require('./data');
 
+// CORS support
+
+server.use(cors());
+var corsOptions = {
+	origin: /http:\/\/localhost:\d*/,
+	optionsSuccessStatus: 200
+};
+
 // GET
 
-server.get("/majors", (req, res) => {
+server.get("/majors", cors(corsOptions), (req, res) => {
 	res.json({"majors": data.majors});
 });
 
-server.get("/major/:majorID", (req, res) => {
+server.get("/major/:majorID", cors(corsOptions), (req, res) => {
 	const majorID = req.params.majorID;
 
 	if (majorID == CS_ID) {
@@ -24,6 +33,8 @@ server.get("/major/:majorID", (req, res) => {
 		res.json({message: `Major ${majorID} doesn't exitst`});
 	}
 });
+
+// Start
 
 server.listen(port, () => {
 	console.log(`Server listening at ${port}`);
