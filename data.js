@@ -971,7 +971,7 @@ module.exports = {
          {
             "code" : "ECON 381",
             "name" : "Intermediate Macroeconomics",
-            "credits" : 3
+            "credits" : 3,
             "type" : "major-required",
             "offered" :
                {
@@ -1289,7 +1289,7 @@ module.exports = {
                  {
                     "code" : "ECON 381",
                     "name" : "Intermediate Macroeconomics",
-                    "credits" : 3
+                    "credits" : 3,
                     "type" : "major-required",
                     "offered" :
                        {
@@ -1303,7 +1303,7 @@ module.exports = {
                  {
                     "code" : "ENGL 312",
                     "name" : "Persuasive Writing",
-                    "credits" : 3
+                    "credits" : 3,
                     "type" : "GE",
                     "offered" :
                        {
@@ -1320,7 +1320,7 @@ module.exports = {
                  {
                     "code" : "IHUM 201",
                     "name" : "Western Humanities 1: Antiquity to Renaissance",
-                    "credits" : 3
+                    "credits" : 3,
                     "type" : "GE",
                     "offered" :
                        {
@@ -1386,7 +1386,7 @@ module.exports = {
                  {
                     "code" : "MUSIC 101",
                     "name" : "Introduction to Music",
-                    "credits" : 3
+                    "credits" : 3,
                     "type" : "GE",
                     "offered" :
                        {
@@ -1403,7 +1403,7 @@ module.exports = {
                  {
                     "code" : "IHUM 202",
                     "name" : "Western Humanities 2: Renaissance to the Present",
-                    "credits" : 3
+                    "credits" : 3,
                     "type" : "GE",
                     "offered" :
                        {
@@ -1469,7 +1469,7 @@ module.exports = {
                  {
                     "code" : "PHSCS 101",
                     "name" : "Basic Physics",
-                    "credits" : 3
+                    "credits" : 3,
                     "type" : "GE",
                     "offered" :
                        {
@@ -1486,7 +1486,7 @@ module.exports = {
                  {
                     "code" : "BIO 100",
                     "name" : "Principles of Biology",
-                    "credits" : 3
+                    "credits" : 3,
                     "type" : "GE",
                     "offered" :
                        {
@@ -1518,7 +1518,7 @@ module.exports = {
                         ]
                  }
                ]
-             }
+             },
              {
                "year" : 2024,
                "type" : "Winter",
