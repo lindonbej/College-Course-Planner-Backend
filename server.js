@@ -11,7 +11,8 @@ var data = require('./data');
 
 server.use(cors());
 var corsOptions = {
-	origin: /http:\/\/localhost:\d*/,
+	// warning: accepts requests from all origins
+	origin: /.*/,
 	optionsSuccessStatus: 200
 };
 
