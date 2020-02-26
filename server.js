@@ -22,13 +22,26 @@ server.get("/majors", cors(corsOptions), (req, res) => {
 	res.json({"majors": data.majors});
 });
 
-server.get("/major/:majorID", cors(corsOptions), (req, res) => {
+server.get("/majorProgram/:majorID", cors(corsOptions), (req, res) => {
 	const majorID = req.params.majorID;
 
 	if (majorID == CS_ID) {
-		res.json({"program": data.csProgram, "schedule": data.csSchedule});
+		res.json({"program": data.csProgram});
 	} else if (majorID == ECON_ID) {
-		res.json({"program": data.econProgram, "schedule": data.econSchedule});
+		res.json({"program": data.econProgram});
+	} else {
+		res.status(404);
+		res.json({message: `Major ${majorID} doesn't exitst`});
+	}
+});
+
+server.get("/majorSchedule/:majorID", cors(corsOptions), (req, res) => {
+	const majorID = req.params.majorID;
+
+	if (majorID == CS_ID) {
+		res.json({"schedule": data.csSchedule});
+	} else if (majorID == ECON_ID) {
+		res.json({"schedule": data.econSchedule});
 	} else {
 		res.status(404);
 		res.json({message: `Major ${majorID} doesn't exitst`});

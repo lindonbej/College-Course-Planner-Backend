@@ -17,13 +17,31 @@ Response:
     ]  
 }
 ```
-
+#### WE NO LONGER USE THIS ONE
 #### To get course data for a specific major:
 Request: `GET "/major/<majorID>"`  
 Response:   
 ```
 {
  "program": <Program object>, 
+ "schedule": <Schedule object>
+}
+```
+
+#### To get program data for a specific major:
+Request: `GET "/majorProgram/<majorID>"`  
+Response:   
+```
+{
+ "program": <Program object>
+}
+```
+
+#### To get schedule data for a specific major:
+Request: `GET "/majorSchedule/<majorID>"`  
+Response:   
+```
+{
  "schedule": <Schedule object>
 }
 ```
