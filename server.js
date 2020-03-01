@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const mongoose = require('mongoose');
 const server = express();
 const port = 4000;
 
@@ -47,6 +48,47 @@ server.get("/majorSchedule/:majorID", cors(corsOptions), (req, res) => {
 		res.json({message: `Major ${majorID} doesn't exitst`});
 	}
 });
+
+server.get("/schedule/:netid", cors(corsOptions), (req, res) => {
+
+})
+
+// POST
+
+const Student = mongoose.model('Student', {
+	netid: String,
+	schedule: String
+});
+
+server.post("/schedule/:netid", cors(corsOptions), (req, res) => {
+	console.log("entered post method");
+	schedule = req.body;
+	netid = req.params.netid;
+	mongoose.connect('mongodb://localhost:27017/StudentDB', {
+		useNewUrlParser: true
+	});
+	console.log("passed connect");
+	const newStudent = new Student({
+		netid: netid,
+		schedule: schedule
+	});
+	// catch {
+	// 	const Student = mongoose.model('Student');
+	// }
+	// const newStudent = new Student({
+	// 	netid: netid,
+	// 	schedule: schedule
+	// });
+	async function addStudent() {
+		await newStudent.save();
+		let students = await Student.find();
+		console.log(students);
+		res.status(200);
+		res.json({message: "worked and stuff"});
+	}
+	console.log("about to add student");
+	addStudent();
+})
 
 // Start
 
