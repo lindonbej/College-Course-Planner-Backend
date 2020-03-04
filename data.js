@@ -1015,8 +1015,8 @@ module.exports = {
                 ]
          },
          {
-           "code" : "REL A 211"
-           "name" : "The New Testament"
+           "code" : "REL A 211",
+           "name" : "The New Testament",
            "credits" : 2,
            "type" : "GE",
            "offered" :
@@ -1024,13 +1024,13 @@ module.exports = {
              "fall" : true,
              "winter" : true,
              "spring" : true,
-             "summer" : true,
+             "summer" : true
            },
            "prereqs" : []
          },
          {
-           "code" : "REL C 324"
-           "name" : "The Doctrine and Covenants"
+           "code" : "REL C 324",
+           "name" : "The Doctrine and Covenants",
            "credits" : 2,
            "type" : "GE",
            "offered" :
@@ -1038,7 +1038,7 @@ module.exports = {
              "fall" : true,
              "winter" : true,
              "spring" : true,
-             "summer" : true,
+             "summer" : true
            },
            "prereqs" : []
          },
@@ -1510,7 +1510,7 @@ module.exports = {
              "ECON 378",
              "ECON 380",
              "ECON 381",
-             "REL C 324"
+             "REL C 324",
              "IHUM 201"
            ]
          },
@@ -1547,7 +1547,7 @@ module.exports = {
              "REL C 200",
              "ENGL 312"
            ]
-         }
+         },
          {
            "year" : "2024",
            "type" : "Fall",
