@@ -3,10 +3,18 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const server = express();
 const port = 4000;
+const bodyParser = require('body-parser');
 
 const CS_ID = 1;
 const ECON_ID = 2;
 var data = require('./data');
+
+server.use(bodyParser.json());
+
+const Student = mongoose.model('Student', {
+	netid: String,
+	schedule: String
+});
 
 // CORS support
 
@@ -50,19 +58,28 @@ server.get("/majorSchedule/:majorID", cors(corsOptions), (req, res) => {
 });
 
 server.get("/schedule/:netid", cors(corsOptions), (req, res) => {
-
+	console.log("entered get");
+	mongoose.connect('mongodb://localhost:27017/StudentDB', {
+		useNewUrlParser: true
+	});
+	netid = req.params.netid;
+	Student.findOne({'netid': netid}, 'schedule', function(err, schedule) {
+		console.log("found netID1");
+		if (err) {
+			res.status(501);
+			res.json({message: "failed"});
+		} else {
+			res.status(200);
+			res.json(schedule.schedule);
+		}
+	})
 })
 
 // POST
 
-const Student = mongoose.model('Student', {
-	netid: String,
-	schedule: String
-});
-
 server.post("/schedule/:netid", cors(corsOptions), (req, res) => {
 	console.log("entered post method");
-	schedule = req.body;
+	schedule = JSON.stringify(req.body);
 	netid = req.params.netid;
 	mongoose.connect('mongodb://localhost:27017/StudentDB', {
 		useNewUrlParser: true
@@ -72,13 +89,6 @@ server.post("/schedule/:netid", cors(corsOptions), (req, res) => {
 		netid: netid,
 		schedule: schedule
 	});
-	// catch {
-	// 	const Student = mongoose.model('Student');
-	// }
-	// const newStudent = new Student({
-	// 	netid: netid,
-	// 	schedule: schedule
-	// });
 	async function addStudent() {
 		await newStudent.save();
 		let students = await Student.find();
