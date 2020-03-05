@@ -28,8 +28,7 @@ server.use(cors());
 var corsOptions = {
 	// warning: accepts requests from all origins
 	origin: /.*/,
-	optionsSuccessStatus: 200,
-	methods: ['GET', 'POST']
+	optionsSuccessStatus: 200
 };
 
 // GET
