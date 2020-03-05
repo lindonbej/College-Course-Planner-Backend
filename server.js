@@ -20,7 +20,6 @@ server.use(bodyParser.json());
 const Student = mongoose.model('Student', {
 	netid: String,
 	schedule: String,
-	methods: ['GET', 'POST']
 });
 
 // CORS support
@@ -29,7 +28,8 @@ server.use(cors());
 var corsOptions = {
 	// warning: accepts requests from all origins
 	origin: /.*/,
-	optionsSuccessStatus: 200
+	optionsSuccessStatus: 200,
+	methods: ['GET', 'POST']
 };
 
 // GET
