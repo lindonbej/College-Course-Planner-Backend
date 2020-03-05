@@ -25,11 +25,11 @@ const Student = mongoose.model('Student', {
 // CORS support
 
 server.use(cors());
-var corsOptions = {
-	// warning: accepts requests from all origins
-	origin: /.*/,
-	optionsSuccessStatus: 200
-};
+// var corsOptions = {
+// 	// warning: accepts requests from all origins
+// 	origin: /.*/,
+// 	optionsSuccessStatus: 200
+// };
 
 // GET
 
