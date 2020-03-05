@@ -13,7 +13,8 @@ server.use(bodyParser.json());
 
 const Student = mongoose.model('Student', {
 	netid: String,
-	schedule: String
+	schedule: String,
+	methods: ['GET', 'POST']
 });
 
 // CORS support
