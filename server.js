@@ -2,14 +2,20 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const server = express();
-const port = 4000;
 const bodyParser = require('body-parser');
+var data = require('./data');
 
 const CS_ID = 1;
 const ECON_ID = 2;
-var data = require('./data');
+const port = 4000;
 
 server.use(bodyParser.json());
+
+// DB config
+
+// const scheduleSchema = new Schema({
+// 	netid: { type: String, unique: true, required: true}
+// })
 
 const Student = mongoose.model('Student', {
 	netid: String,
@@ -79,19 +85,14 @@ server.get("/schedule/:netid", cors(corsOptions), (req, res) => {
 // POST
 
 server.post("/schedule/:netid", cors(corsOptions), (req, res) => {
-	console.log("entered post method");
 	schedule = JSON.stringify(req.body);
 	netid = req.params.netid;
 	mongoose.connect('mongodb://localhost:27017/StudentDB', {
 		useNewUrlParser: true
 	});
-	console.log("passed connect");
-	const newStudent = new Student({
-		netid: netid,
-		schedule: schedule
-	});
 	async function addStudent() {
-		await newStudent.save();
+		//await newStudent.save();
+		await Student.findOneAndUpdate({'netid': netid}, {$set: {schedule: schedule}}, {upsert: true, useFindAndModify: false});
 		let students = await Student.find();
 		console.log(students);
 		res.status(200);
